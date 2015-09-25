@@ -1,0 +1,19 @@
+
+<h3 ng-show="!students.length">No students!</h3>
+
+<div ng-show="students.length">
+  <h3>Here</h3>
+  <ul>
+    <li ng-repeat="item in students | filter: {present: true}">
+      {{item.name}}
+    </li>
+  </ul>
+
+  <h3>Too cool for school</h3>
+  <ul>
+    <li ng-repeat="item in students | filter: {present: false}">
+      {{item.name}}
+    </li>
+  </ul>
+
+</div>
