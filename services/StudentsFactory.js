@@ -15,7 +15,7 @@ attendanceTaker.factory('StudentsFactory', function StudentsFactory() {
     },
     {
       name: "Mario",
-      present: true
+      present: false
     },
     {
       name: "Luigi",
