@@ -1,0 +1,11 @@
+
+<h3 ng-show="students.length">Please sign in</h3>
+<h3 ng-show="!students.length">No students!</h3>
+<ul>
+  <li ng-repeat="item in students">
+    {{item.name}}
+    <button class="btn btn-warning btn-sm" ng-click="item.present=false" ng-show="item.present">Sign out</button>
+    <button class="btn btn-default btn-sm" ng-click="item.present=true" ng-show="!item.present">Sign in</button>
+  </li>
+
+</ul>
