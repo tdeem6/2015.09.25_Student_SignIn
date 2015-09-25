@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="attendanceTaker">
+  <head>
+    <title>Attendance Taker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/StudentsCtrl.js"></script>
+    <script src="services/StudentsFactory.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul id="top-menu">
+        <li class="link" ui-sref="students">Sign in</li>
+        <li> | </li>
+        <li class="link" ui-sref="instructors">Who's here</li>
+      </ul>
+      <div ui-view></div>
+    </div>
+  </body>
+</html>
